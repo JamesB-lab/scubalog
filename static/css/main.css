@@ -1,0 +1,159 @@
+body {
+    background-color: #FAF9F6;
+    background-image: url("/static/images/bg_dots.png");
+}
+
+
+/* Mobile (smallest) size defaults to 1 column*/ */
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr; /* smallest size defaults to 1 column (mobile) */
+}
+
+
+.card {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: whitesmoke;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  width: 50%;
+  height: 65%;
+  text-align: left;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+  
+}
+
+.form {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  display: grid;
+  justify-items: left;
+  align-items: left;
+  width: 50%;
+  padding: 50%;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+
+
+/* Backup ultra small
+@media only screen and (min-width: 1px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+
+/* Tablet has 2 columns */
+/* @media only screen and (min-width: 800px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+
+/* Desktop has 3 columns */
+/* /* @media only screen and (min-width: 1200px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
+
+
+
+
+
+
+@media only screen and (min-width:600px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+
+
+
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+} */
+
+/* .image {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+} */
+
+
+/* 
+.oee_plot {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: white;
+}
+
+.time_series {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: white;
+}
+
+.availability_plot {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: white;
+}
+
+.performance_plot {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: white;
+}
+
+.quality_plot {
+  border: 3px;
+  border-color: #000000;
+  border-style: solid;
+  background-color: white;
+}
+
+.clock {
+  display:inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.title {
+  display:inline-block;
+  justify-items: end;
+  align-items: end;
+} */

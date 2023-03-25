@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<h1>Add Stencil to Toolbank</h1>
+<! link to css stylesheet>
+<link rel ="stylesheet" type="text/css" href="{% static '\\css\\main.css' %}">
+
+<div class="card">
+    <div class="container">
+
+
+        <form action="/action_page.php">
+
+            <label for="Manufacture Date">Date of Manufacture:</label><br>
+            <input type="date" id="fname" name="fname" value=""><br><br>
+
+            <label for="Stencil Number">Stencil Number:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="Revision">Revision:</label><br>
+            <select id="rev" name="rev">
+                <option value="R1">R1</option>
+                <option value="R2">R2</option>
+                <option value="R3">R3</option>
+                <option value="R4">R4</option>
+                <option value="R5">R5</option>
+                <option value="R6">R6</option>
+                <option value="R7">R7</option>
+                <option value="R8">R8</option>
+                <option value="R9">R9</option>
+            </select><br><br>
+            
+
+            <label for="ZL Number">ZL Number:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="Material">Material:</label><br>
+            <select id="mat" name="mat">
+                <option value="Stainless Steel">Stainless Steel</option>
+                <option value="Finegrain Steel">Finegrain Steel</option>
+                <option value="Lasercut Nickel">Lasercut Nickel</option>
+                <option value="Electroform">Electroform</option>
+                <option value="Mesh">Mesh</option>
+                <option value="Platinum">Platinum</option>
+
+            </select><br><br>
+
+            <label for="Manufacturer Number">Manufacturer Number:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="Thickness">Thickness:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+    </div>
+</div>
+{% endblock content %}
