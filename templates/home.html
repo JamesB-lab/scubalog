@@ -2,7 +2,7 @@
 {% load static %}
 {% block content%}
 
-<h1>Add Stencil to Toolbank</h1>
+<h1>Log Dive to Database</h1>
 <! link to css stylesheet>
 <link rel ="stylesheet" type="text/css" href="{% static '\\css\\main.css' %}">
 
@@ -12,37 +12,56 @@
 
         <form action="/action_page.php">
 
-            <label for="Manufacture Date">Date of Manufacture:</label><br>
+            <label for="Date">Date:</label><br>
             <input type="date" id="fname" name="fname" value=""><br><br>
 
-            <label for="Stencil Number">Stencil Number:</label><br>
+            <label for="Dive Time">Dive Time:</label><br>
             <input type="text" id="lname" name="lname" value=""><br><br>
 
-            <label for="Revision">Revision:</label><br>
+            <label for="Max Depth">Max Depth:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="Average Depth">Average Depth:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="O2 %%">O2 %:</label><br>
             <select id="rev" name="rev">
-                <option value="R1">R1</option>
-                <option value="R2">R2</option>
-                <option value="R3">R3</option>
-                <option value="R4">R4</option>
-                <option value="R5">R5</option>
-                <option value="R6">R6</option>
-                <option value="R7">R7</option>
-                <option value="R8">R8</option>
-                <option value="R9">R9</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
             </select><br><br>
             
 
-            <label for="ZL Number">ZL Number:</label><br>
+            <label for="Air In">Air In (bar):</label><br>
             <input type="text" id="lname" name="lname" value=""><br><br>
 
-            <label for="Material">Material:</label><br>
+            <label for="Air Out">Air Out (bar):</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="Cylinder Type">Cylinder:</label><br>
             <select id="mat" name="mat">
-                <option value="Stainless Steel">Stainless Steel</option>
-                <option value="Finegrain Steel">Finegrain Steel</option>
-                <option value="Lasercut Nickel">Lasercut Nickel</option>
-                <option value="Electroform">Electroform</option>
-                <option value="Mesh">Mesh</option>
-                <option value="Platinum">Platinum</option>
+                <option value="7 litre steel 300bar">7 litre steel 300bar</option>
+                <option value="10 litre Steel 230bar">10 litre Steel 230bar</option>
+                <option value="12 litre Steel 230bar">12 litre Steel 230bar</option>
+                <option value="15 litre Steel 230bar">15 litre Steel 230bar</option>
+                <option value="11.1 litre Aluminium (80cf) 200bar">11.1 litre Aluminium (80cf) 200bar</option>
+                <option value="13.3 litre Aluminium (100cf) 200bar">13.3 litre Aluminium (100cf) 200bar</option>
+                <option value="Twin 7 litre steel 300bar">Twin 7 litre steel 300bar</option>
+                <option value="Twin 12 litre steel 230bar">Twin 12 litre steel 230bar</option>
+                <option value="Twin 15 litre steel 230bar">Twin 15 litre steel 230bar</option>
 
             </select><br><br>
 
